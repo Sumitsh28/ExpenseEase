@@ -178,9 +178,11 @@ export const Export = ({ session, viewport }: Props) => {
     // Add the image to the PDF
     pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
 
-    const pdfBlob = pdf.output("bloburl");
+    const pdfBlob = pdf.output("blob");
+    const pdfUrl = URL.createObjectURL(pdfBlob);
+
     if (pdfIframeRef.current) {
-      pdfIframeRef.current.src = pdfBlob;
+      pdfIframeRef.current.src = pdfUrl;
     }
 
     setShow(true);
