@@ -4,7 +4,6 @@ import { CalendarDateRangePicker } from "@/components/date-range-picker";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Session } from "next-auth";
-
 import { useEffect, useRef, useState } from "react";
 import { DateRange } from "react-day-picker";
 import { format, subYears } from "date-fns";
@@ -370,8 +369,8 @@ export const Export = ({ session, viewport }: Props) => {
                     <div className="flex flex-row justify-evenly">
                       <div className="flex flex-row gap-2">
                         <Image
-                          src={session?.user?.image}
-                          alt={session?.user?.name}
+                          src={session?.user?.image || "public/user.jpg"}
+                          alt={session?.user?.name || "User Image"}
                           className="rounded-full w-[300px] h-[300px]"
                           width={300}
                           height={300}
