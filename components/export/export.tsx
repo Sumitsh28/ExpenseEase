@@ -152,9 +152,11 @@ export const Export = ({ session, viewport }: Props) => {
     pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
 
     // Get the PDF as a blob and set it to the iframe source
-    const pdfBlob = pdf.output("bloburl");
+    const pdfBlob = pdf.output("blob");
+    const pdfUrl = URL.createObjectURL(pdfBlob);
+
     if (pdfIframeRef.current) {
-      pdfIframeRef.current.src = pdfBlob;
+      pdfIframeRef.current.src = pdfUrl;
     }
 
     // Optionally, save the PDF file
