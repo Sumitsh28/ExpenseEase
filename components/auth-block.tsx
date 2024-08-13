@@ -10,14 +10,14 @@ export const AuthBlock = () => {
 
   return (
     <div className="w-full mx-auto">
-      <div className="lg:hidden mt-20 mb-5 flex items-center text-lg font-medium gap-x-2 p-0.5 justify-center">
+      <div className="mt-20 mb-10 flex items-center text-lg font-medium gap-x-2 p-0.5 justify-center">
         <Image
           src="/images/logo.webp"
           alt="Expense Ease logo"
-          width={45}
-          height={45}
+          width={80}
+          height={80}
         />
-        <span className="">Expense Ease</span>
+        <span className="text-3xl">Expense Ease</span>
       </div>
       <div
         className="relative mx-auto flex w-full flex-col justify-center 
