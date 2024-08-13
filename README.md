@@ -1,4 +1,4 @@
-# 🎓 Expense Ease
+# 💰 Expense Ease
 
 Welcome to the Expense Ease! This project is a modern web application built with Next.js, Tailwind CSS, and MongoDB. A comprehensive tool for effortlessly managing your financial transactions. Whether you're tracking income, expenses. Expense Tracker offers a user-friendly platform to handle it all with ease. 🌟
 
