@@ -29,6 +29,8 @@ https://expense-ease-eta.vercel.app/auth
 ![Logo](https://raw.githubusercontent.com/Sumitsh28/images/5a0d20cf3d06e9263bb3bbc5be36738031df776f/Screenshot%20-%202024-08-12T232056.977.png)
 
 
+## Demo
+https://www.loom.com/share/f28d923cf5034327a3b1b3aa9d1d5528?sid=f471dca0-4b1c-4883-ad65-25066299e96d
 
 
 
